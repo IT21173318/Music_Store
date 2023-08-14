@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" version="5.0">
+  <display-name>MyProject</display-name>
+  <welcome-file-list>
+    <welcome-file>Book.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>insertBookingDetails</display-name>
+    <servlet-name>insertBookingDetails</servlet-name>
+    <servlet-class>booking_servlets.insertBookingDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>insertBookingDetails</servlet-name>
+    <url-pattern>/insertBookingDetails</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>updateBookingDetails</display-name>
+    <servlet-name>updateBookingDetails</servlet-name>
+    <servlet-class>booking_servlets.updateBookingDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateBookingDetails</servlet-name>
+    <url-pattern>/updateBookingDetails</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>deleteBookingDetails</display-name>
+    <servlet-name>deleteBookingDetails</servlet-name>
+    <servlet-class>booking_servlets.deleteBookingDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteBookingDetails</servlet-name>
+    <url-pattern>/deleteBookingDetails</url-pattern>
+  </servlet-mapping>
+</web-app>
